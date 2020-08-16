@@ -1,0 +1,22 @@
+/**! Custom Styles **/
+
+@import url('animate.min.css') all;
+@import url('bootstrap.min.css') all;
+@import url('boxicons.css') all;
+@import url('meanmenu.css') all;
+@import url('meanmenu.min.css') all;
+@import url('nice-select.min.css') all;
+@import url('owl.carousel.min.css') all;
+@import url('owl.theme.default.min.css') all;
+@import url('responsive.css') all;
+@import url('responsive.css.map') all;
+@import url('responsive.scss') all;
+@import url('style.css') all;
+@import url('style.css.map') all;
+@import url('style.scss') all;
+/*@import url('../fonts/style.css') all;*/
+/*@import url('custom.css') all;*/
+
+html {
+    scroll-behavior: smooth;
+}
