@@ -2,6 +2,12 @@
         <!-- Chat App Script   -->
         <script type="text/javascript">function add_chatinline(){var hccid=31817338;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);} add_chatinline(); </script>
 
+        <!-- Mailchimp API Script   -->
+        <script id="mcjs">
+        !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e16656569a7c8ebe42d5233e6/f833c983a1072f4966afccc87.js");
+        </script>
+        <!-- Mailchimp API Script   -->
+
         <!-- Jquery Min JS -->
         <script type="text/javascript" type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/jquery-3.5.1.slim.min.js"></script>
         <!-- Popper Min JS -->

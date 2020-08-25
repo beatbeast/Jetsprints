@@ -43,80 +43,8 @@
 
                     <!-- <p>Sorry, no posts matched your criteria.</p> -->
 
-                    <!-- <div class="col-lg-4 col-md-6">
-                        <div class="service-card">
-                            <a href="services.html">
-                                <img src="assets/img/service/2.jpg" alt="Service Images">
-                            </a>
-                            <div class="service-content">
-                                <a href="services.html"><h3>Package Design</h3></a>
-                                <p>Lorem ipsum dolor sit amet, consect is etur adipiscing elit, sed do eiusmo gd  tempor incididunt ut labore.</p>
-                                <a href="services.html" class="more-btn">
-                                    <i class='bx bx-plus'></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-card">
-                            <a href="services.html">
-                                <img src="assets/img/service/3.jpg" alt="Service Images">
-                            </a>
-                            <div class="service-content">
-                                <a href="services.html"><h3>Pattern Design</h3></a>
-                                <p>Lorem ipsum dolor sit amet, consect is etur adipiscing elit, sed do eiusmo gd  tempor incididunt ut labore.</p>
-                                <a href="services.html" class="more-btn">
-                                    <i class='bx bx-plus'></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-card">
-                            <a href="services.html">
-                                <img src="assets/img/service/4.jpg" alt="Service Images">
-                            </a>
-                            <div class="service-content">
-                                <a href="services.html"><h3>Book Cover</h3></a>
-                                <p>Lorem ipsum dolor sit amet, consect is etur adipiscing elit, sed do eiusmo gd  tempor incididunt ut labore.</p>
-                                <a href="services.html" class="more-btn">
-                                    <i class='bx bx-plus'></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-card">
-                            <a href="services.html">
-                                <img src="assets/img/service/5.jpg" alt="Service Images">
-                            </a>
-                            <div class="service-content">
-                                <a href="services.html"><h3>T-shirt Design</h3></a>
-                                <p>Lorem ipsum dolor sit amet, consect is etur adipiscing elit, sed do eiusmo gd  tempor incididunt ut labore.</p>
-                                <a href="services.html" class="more-btn">
-                                    <i class='bx bx-plus'></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-card">
-                            <a href="services.html">
-                                <img src="assets/img/service/6.jpg" alt="Service Images">
-                            </a>
-                            <div class="service-content">
-                                <a href="services.html"><h3>Brochure Design</h3></a>
-                                <p>Lorem ipsum dolor sit amet, consect is etur adipiscing elit, sed do eiusmo gd  tempor incididunt ut labore.</p>
-                                <a href="services.html" class="more-btn">
-                                    <i class='bx bx-plus'></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
                 </div> 
                 <?php //endif; ?>
             </div>
