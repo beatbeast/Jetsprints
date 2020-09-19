@@ -1,3 +1,8 @@
+<?php 
+global $woocommerce;
+// $cart_url = $woocommerce->cart->get_cart_url();
+$cart_url = wc_get_cart_url();
+?>
 <!-- Start Navbar Area -->
         <div class="navbar-area">
             <!-- Menu For Mobile Device -->
@@ -12,7 +17,7 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light ">
                         <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" alt="Logo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo">
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -94,7 +99,7 @@
                             </ul>
 
                             <div class="cart-area">
-                                <a href="cart.html">
+                                <a href="<?=$cart_url ; ?>">
                                     <i class='bx bx-cart'></i>
                                 </a>
                             </div>

@@ -8,6 +8,11 @@
         </script>
         <!-- Mailchimp API Script   -->
 
+        <!-- MDB JS -->
+        <script type="text/javascript" type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/mdb.js"></script>
+        <!-- MDB Min JS -->
+        <script type="text/javascript" type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/mdb.min.js"></script>
+
         <!-- Jquery Min JS -->
         <script type="text/javascript" type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/jquery-3.5.1.slim.min.js"></script>
         <!-- Popper Min JS -->
@@ -30,3 +35,12 @@
         <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/contact-form-script.js"></script>
         <!-- Custom JS -->
         <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/custom.js"></script>
+
+        <!-- JQuery -->
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <!-- Bootstrap tooltips -->
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script> -->
+        <!-- Bootstrap core JavaScript -->
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+        <!-- MDB core JavaScript -->
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script> -->

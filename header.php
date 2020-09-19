@@ -10,7 +10,7 @@
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="pre-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.jpg" alt="Logo">
                     </div>
                     <div class="spinner">
                         <div class="circle1"></div>

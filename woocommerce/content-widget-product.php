@@ -24,20 +24,36 @@ if ( ! is_a( $product, 'WC_Product' ) ) {
 	return;
 }
 
+global $woocommerce;
+$cart_url = $woocommerce->cart->get_cart_url();
+
 ?>
-<li>
+<div class="col-lg-4 col-md-6">
 	<?php do_action( 'woocommerce_widget_product_item_start', $args ); ?>
-
-	<a href="<?php echo esc_url( $product->get_permalink() ); ?>">
-		<?php echo $product->get_image(); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-		<span class="product-title"><?php echo wp_kses_post( $product->get_name() ); ?></span>
-	</a>
-
-	<?php if ( ! empty( $show_rating ) ) : ?>
-		<?php echo wc_get_rating_html( $product->get_average_rating() ); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-	<?php endif; ?>
-
-	<?php echo $product->get_price_html(); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-
-	<?php do_action( 'woocommerce_widget_product_item_end', $args ); ?>
-</li>
+	    <div class="product-card">
+	        <a href="<?php echo esc_url( $product->get_permalink() ); ?>">
+	            <img src="<?php echo $product->get_image(); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>" alt="Products Images">
+	        </a>
+	        <div class="product-content">
+	            <a href="<?php echo esc_url( $product->get_permalink() ); ?>">
+	                <h3><?php echo wp_kses_post( $product->get_name() ); ?></h3>
+	            </a>
+	            <p><span><?php echo $product->get_price_html(); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span> +vat</p>
+	            <div class="product-cart">
+	                <ul>
+	                    <li>
+	                        <a href="#">
+	                            <i class='bx bx-heart'></i>
+	                        </a>
+	                    </li>
+	                    <li>
+	                        <a href="<?=$cart_url ; ?>">
+	                            <i class='bx bx-cart'></i>
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+    <?php do_action( 'woocommerce_widget_product_item_end', $args ); ?>
+</div>

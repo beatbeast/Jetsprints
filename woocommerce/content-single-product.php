@@ -12,65 +12,147 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.6.0
+ * @version 3.4.0
  */
 
 defined( 'ABSPATH' ) || exit;
 
-global $product;
-
 /**
  * Hook: woocommerce_before_single_product.
  *
- * @hooked woocommerce_output_all_notices - 10
+ * @hooked wc_print_notices - 10
  */
 do_action( 'woocommerce_before_single_product' );
 
 if ( post_password_required() ) {
-	echo get_the_password_form(); // WPCS: XSS ok.
-	return;
+  echo get_the_password_form(); // WPCS: XSS ok.
+  return;
 }
 ?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+<header>
+    <!-- Intro -->
+    <div class="card card-intro blue-gradient mb-4">
 
-	<?php
-	/**
-	 * Hook: woocommerce_before_single_product_summary.
-	 *
-	 * @hooked woocommerce_show_product_sale_flash - 10
-	 * @hooked woocommerce_show_product_images - 20
-	 */
-	do_action( 'woocommerce_before_single_product_summary' );
-	?>
+        <div class="card-body white-text rgba-black-light text-center pt-5 pb-4">
 
-	<div class="summary entry-summary">
-		<?php
-		/**
-		 * Hook: woocommerce_single_product_summary.
-		 *
-		 * @hooked woocommerce_template_single_title - 5
-		 * @hooked woocommerce_template_single_rating - 10
-		 * @hooked woocommerce_template_single_price - 10
-		 * @hooked woocommerce_template_single_excerpt - 20
-		 * @hooked woocommerce_template_single_add_to_cart - 30
-		 * @hooked woocommerce_template_single_meta - 40
-		 * @hooked woocommerce_template_single_sharing - 50
-		 * @hooked WC_Structured_Data::generate_product_data() - 60
-		 */
-		do_action( 'woocommerce_single_product_summary' );
-		?>
-	</div>
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
 
-	<?php
-	/**
-	 * Hook: woocommerce_after_single_product_summary.
-	 *
-	 * @hooked woocommerce_output_product_data_tabs - 10
-	 * @hooked woocommerce_upsell_display - 15
-	 * @hooked woocommerce_output_related_products - 20
-	 */
-	do_action( 'woocommerce_after_single_product_summary' );
-	?>
-</div>
+                <!--Grid column-->
+                <div class="col-md-6">
+
+                  <?php the_title( '<h1 class="product_title entry-title font-weight-bold mb-4">', '</h1>' ); ?>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </div>
+
+    </div>
+    <!-- Intro -->
+
+</header>
+
+<main>
+
+    <div id="product-<?php the_ID(); ?>" <?php wc_product_class(); ?>>
+
+        <div class="container dark-grey-text">
+
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+        <?php
+          /**
+           * Hook: woocommerce_before_single_product_summary.
+           *
+           * @hooked woocommerce_show_product_sale_flash - 10
+           * @hooked woocommerce_show_product_images - 20
+           */
+          do_action( 'woocommerce_before_single_product_summary' );
+        ?>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+                     <!--Content-->
+                    <div class="p-4">
+
+                    <div class="summary entry-summary">
+            <?php
+              /**
+               * Hook: woocommerce_single_product_summary.
+               *
+               * @hooked woocommerce_template_single_title - 5
+               * @hooked woocommerce_template_single_rating - 10
+               * @hooked woocommerce_template_single_price - 10
+               * @hooked woocommerce_template_single_excerpt - 20
+               * @hooked woocommerce_template_single_add_to_cart - 30
+               * @hooked woocommerce_template_single_meta - 40
+               * @hooked woocommerce_template_single_sharing - 50
+               * @hooked WC_Structured_Data::generate_product_data() - 60
+               */
+              do_action( 'woocommerce_single_product_summary' );
+            ?>
+          </div>
+
+                    </div>
+                    <!--Content-->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            <hr>
+
+            <?php if (wc_get_related_products(get_the_ID())) {  ?>
+
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center wow fadeIn">
+
+                <!--Grid column-->
+                <div class="col-md-6 text-center">
+                    <h4 class="my-4 h4">Related products</h4>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+
+      <?php
+        /**
+         * Hook: woocommerce_after_single_product_summary.
+         *
+         * @hooked woocommerce_output_product_data_tabs - 10
+         * @hooked woocommerce_upsell_display - 15
+         * @hooked woocommerce_output_related_products - 20
+         */
+        do_action( 'woocommerce_after_single_product_summary' );
+      ?>
+
+            </div>
+            <!--Grid row-->
+            <?php } ?>
+
+    </div>
+          <!--Container  -->
+
+  </div>
+    <!--Div product -->
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
+
+</main>

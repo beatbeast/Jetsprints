@@ -96,7 +96,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-3">
                     <div class="footer-logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Footer Logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer-logo.png" alt="Footer Logo">
                     </div>
                 </div>
 
